@@ -1,9 +1,8 @@
 from models.customModel import CustomNet
-import torch
+import torch 
 from train import train
 from eval import validate
 from data.dataManagment import get_data_loaders
-import wandb
 
 
 def main(config):

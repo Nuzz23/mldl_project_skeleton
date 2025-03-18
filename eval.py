@@ -1,6 +1,6 @@
-import torch
-
 def validate(model, val_loader, criterion):
+    import torch
+    
     model.eval()
     val_loss = 0
 
