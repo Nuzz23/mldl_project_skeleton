@@ -16,7 +16,7 @@ def main(config):
     train_loader, val_loader = get_data_loaders()
 
     # Run the training process for {num_epochs} epochs
-    for epoch in range(1, 5 + 1):
+    for epoch in range(1, config.epoches + 1):
         train(epoch, model, train_loader, criterion, optimizer)
 
         # At the end of each training iteration, perform a validation step
