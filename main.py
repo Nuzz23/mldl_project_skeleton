@@ -25,7 +25,7 @@ def main(config):
         # Best validation accuracy
         best_acc = max(best_acc, val_accuracy)
         
-        wandb.log({'val_accuracy': val_accuracy, "epoch": epoch})
+        wandb.log({'val_accuracy': val_accuracy, "epoch": epoch, "best_val_accuracy": best_acc})
 
 
     print(f'Best validation accuracy: {best_acc:.2f}%')
