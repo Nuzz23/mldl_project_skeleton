@@ -1,1 +1,6 @@
-
+pandas
+numpy
+torch
+torchvision
+matplotlib
+requests
